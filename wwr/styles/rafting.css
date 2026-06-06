@@ -1,0 +1,119 @@
+/* --- Base Styling --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Header Layout (CSS Grid) --- */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    max-height: 70px;
+}
+
+/* --- Navigation Layout (CSS Flexbox) --- */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a.active {
+    border-bottom: 2px solid #0077b6;
+}
+
+/* --- History Section Layout --- */
+.history-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    border-radius: 8px;
+}
+
+/* --- Adventures Section Layout (Horizontal 5-Column Grid) --- */
+.adventures-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.adventures-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* --- Footer Layout (CSS Flexbox) --- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
